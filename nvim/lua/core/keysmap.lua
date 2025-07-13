@@ -14,9 +14,22 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- 窗口
 keymap.set("n", "sl", "<C-w>v")
 keymap.set("n", "sb", "<C-w>s")
+-- 鼠标移动
+keymap.set("n", "H", "^")
+keymap.set("n", "L", "$")
+keymap.set("n", "<C-j>", "5j")
+-- keymap.set("n", "<C-k>", "5k", { desc = "Go to upper", remap = true })
+-- keymap.set("n", "<C-h>", "7h", { remap = true })
+-- keymap.set("n", "<C-l>", "7l", { remap = true })
+-- 保存退出
+-- keymap.set("n", "Q", ":q<CR>", { remap = false })
+-- keymap.set("n", "W", ":w<CR>", { remap = false })
 
 -- 快速使用命令
 keymap.set("n", ";", ":")
 
 -- 取消高亮
 keymap.set("n", "<leader><CR>", ":nohl<CR>")
+
+-- 插件
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
