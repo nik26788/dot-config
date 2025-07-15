@@ -63,6 +63,7 @@ return require('packer').startup(function(use)
   }
 
   use "mhinz/vim-startify"
+  use "stevearc/conform.nvim"
 
   if packer_bootstrap then
     require('packer').sync()
