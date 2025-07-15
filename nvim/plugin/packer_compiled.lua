@@ -185,6 +185,11 @@ _G.packer_plugins = {
     path = "/home/risin/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/risin/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/risin/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
