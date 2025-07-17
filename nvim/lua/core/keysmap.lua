@@ -24,6 +24,12 @@ keymap.set("n", "L", "$")
 -- 保存退出
 keymap.set("n", "Q", ":q<CR>")
 keymap.set("n", "W", ":w<CR>")
+keymap.set("n", "<leader>q", ":qa<CR>")
+keymap.set({ "n", "i" }, "<C-z>", "<Cmd>undo<CR>")
+keymap.set("n", "R", ":w<CR>:source $MYVIMRC<CR>")
+
+-- 粘贴复制
+keymap.set("n", "mm", "\"_dd")
 
 -- 快速使用命令
 keymap.set("n", ";", ":")
@@ -35,11 +41,24 @@ keymap.set("n", "<leader><CR>", ":nohl<CR>")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- bufferline
-keymap.set("n", "sk", ":bnext<CR>") 
-keymap.set("n", "sj", ":bprevious<CR>")
+keymap.set("n", "sj", ":bnext<CR>")
+keymap.set("n", "sk", ":bprevious<CR>")
 
 -- hop
-keymap.set("n", "f", ":HopWord<CR>")
+keymap.set("n", "<leader>s", ":HopWord<CR>")
+
+-- lspsaga
+keymap.set("n", "<leader>lR", ":Lspsaga finder<CR>")
+keymap.set("n", "<leader>lr", ":Lspsaga rename<CR>")
+keymap.set("n", "<leader>ld", ":Lspsaga goto_definition<CR>")
+keymap.set("n", "<leader>lh", ":Lspsaga hover_doc<CR>")
+keymap.set("n", "<leader>lc", ":Lspsaga code_action<CR>")
+keymap.set("n", "<leader>ln", ":Lspsaga diagnostic_jump_next<CR>")
+keymap.set("n", "<leader>lp", ":Lspsaga diagnostic_jump_prev<CR>")
+
+-- gitsigns
+keymap.set("n", "gs", ":Gitsigns preview_hunk_inline<CR>")
+keymap.set("n", "gr", ":Gitsigns reset_hunk<CR>")
 
 -- misc
 keymap.set("n", "s", "<nop>")

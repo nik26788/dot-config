@@ -65,6 +65,11 @@ return require('packer').startup(function(use)
     use "stevearc/conform.nvim" -- 格式化代码
     -- use "kylechui/nvim-surround" -- 添加括号
     use "hadronized/hop.nvim"   -- 精确跳转
+    use "nvimdev/lspsaga.nvim"  -- 定位变量定义
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+    }
 
     if packer_bootstrap then
         require('packer').sync()
