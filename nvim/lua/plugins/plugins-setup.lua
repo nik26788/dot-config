@@ -70,6 +70,7 @@ return require('packer').startup(function(use)
         "windwp/nvim-autopairs",
         event = "InsertEnter",
     }
+    use "iamcco/markdown-preview.nvim" -- markdown 文档预览
 
     if packer_bootstrap then
         require('packer').sync()

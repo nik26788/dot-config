@@ -26,7 +26,6 @@ keymap.set("n", "Q", ":q<CR>")
 keymap.set("n", "W", ":w<CR>")
 keymap.set("n", "<leader>q", ":qa<CR>")
 keymap.set({ "n", "i" }, "<C-z>", "<Cmd>undo<CR>")
-keymap.set("n", "R", ":w<CR>:source $MYVIMRC<CR>")
 
 -- 粘贴复制
 keymap.set("n", "mm", "\"_dd")
@@ -62,3 +61,5 @@ keymap.set("n", "gr", ":Gitsigns reset_hunk<CR>")
 
 -- misc
 keymap.set("n", "s", "<nop>")
+keymap.set("n", "vi", ":e $HOME/.config/nvim/lua/core/keysmap.lua<CR>")
+keymap.set("n", "R", ":w<CR>:source $MYVIMRC<CR>")
