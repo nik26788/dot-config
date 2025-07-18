@@ -41,8 +41,8 @@ keymap.set("n", "<leader><CR>", ":nohl<CR>")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- bufferline
-keymap.set("n", "sj", ":bnext<CR>")
-keymap.set("n", "sk", ":bprevious<CR>")
+keymap.set("n", "fj", ":bnext<CR>")
+keymap.set("n", "fk", ":bprevious<CR>")
 
 -- hop
 keymap.set("n", "<leader>s", ":HopWord<CR>")
